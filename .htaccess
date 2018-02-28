@@ -1,0 +1,4 @@
+#ErrorDocument 404 'Stranica trenutno nije dostupna'
+Options -Indexes
+AcceptPathInfo Off
+ErrorDocument 404 /test/portal/error_404.php

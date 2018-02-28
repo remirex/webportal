@@ -1,0 +1,619 @@
+@charset "utf-8";
+/* CSS Document */
+/* tipografija na globalnom nivou !!!*/
+body {
+	font-family: 'Open Sans',Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color: gray;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+}
+h1 {font-size: 32px;}
+h2 {font-size: 26px;}
+h3 {font-size: 24px;}
+h4 {font-size: 22px;}
+h5 {font-size: 20px;}
+h6 {font-size: 18px;}
+p {
+	margin:0 0 0.5em;
+}
+img {
+	vertical-align: bottom;
+	max-width: 100%;
+}
+/* globalna stilizacija linkova*/
+a:link,
+a:visited {
+	color: gray;
+	text-decoration:none;
+}
+a:hover {
+	color: #094186;
+	/*text-decoration: underline;*/
+}
+/* neke bitne klase koje ćemo koristiti u zavisnosti od potrebe */
+.negativ {
+	color: #fff;
+}
+.negativ a:link,
+.negativ a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+.negativ a:hover {
+	color: #fff;
+}
+.clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+.wrapper:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.button {
+	display: inline-block;
+	border: 2px solid /*#0B0FD4;*/#094186;
+	color: /*#0B0FD4;*/#094186;
+	border-radius: 25px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-size: 12px;
+	padding: 14px 28px 13px;
+	line-height: 1;
+	margin: 14px 5px;
+	text-transform: uppercase;
+}
+.button:hover {
+	background-color: /*#0B0FD4;*/#094186;
+	color: #fff;
+}
+.bold {
+	font-weight: 700;
+}
+/* stilizacija header-a */
+#header {
+	background-color: /*#0B0FD4;*/#094186;
+	margin-bottom: 20px;
+}
+#topHeader {
+	background: #000;
+	color: grey;
+}
+.info {
+	float: left;
+	margin-top:6px;
+}
+.info span {
+	margin-right: 20px;
+}
+.info span i {
+	color: #fff;
+}
+.info a:link,
+.info a:visited{
+	text-decoration: none;
+	color: orange;
+}
+.social {
+	float: right;
+}
+.social, .user_account i {
+	font-size: 20px;
+}
+.user_account {
+	float: right;
+	margin-right: 20px;
+}
+#topHeader ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#topHeader ul li {
+	float: left;
+	position: relative;
+}
+#topHeader ul li ul {
+	position: absolute;
+	display: none;
+	right: 0;
+	top: 31.98px;
+	width: 140px;
+	z-index: 999;
+}
+#topHeader ul li:hover > ul {
+	display: inline-block;
+}
+#topHeader ul li ul li {
+	float: none;
+	text-align: right;
+}
+#topHeader ul li a {
+	display: block;
+	padding: 6px;
+	line-height: 1;
+}
+.social ul li a:link,
+.social ul li a:visited {
+	color: #094186;
+}
+.social ul li a:hover {
+	color: #fff;
+}
+.social ul li a:active {
+	color: grey;
+}
+.user_account ul li a:link,
+.user_account ul li a:visited {
+	color: #fff;
+	text-decoration: none;
+	background-color: dimgray;
+}
+.user_account ul li a:hover {
+	background-color: darkgrey;
+}
+.user_account ul li a:active {
+	background-color: grey;
+	color: #000;
+}
+
+
+
+
+
+
+
+.logo {
+	float: left;
+}
+.login {
+	
+	float: right
+}
+.negativ .button {
+	border: 2px solid #fff;
+	color: #fff;
+}
+.negativ .button:hover {
+	background-color: #fff;
+	color: /*#0B0FD4;*/#094186;
+}
+#bottomHeader {
+	background-color: #000;
+}
+.nav {
+	float: left;
+}
+.nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.nav ul li {
+	float: left;
+	position: relative;
+}
+/* stilizacija drugog nivoa */
+.nav ul li ul {
+	display: none;
+	position: absolute;
+	width: 140px;
+	left: 0;
+	top: 50px;
+	background-color: #000;
+	opacity: 0.95;
+	z-index: 999;
+}
+.nav ul li ul li  {
+	float: none;
+}
+.nav ul li:hover > ul {
+	display: block;
+}
+.nav ul li a {
+	display: block;
+	padding: 0 15px;
+	height: 50px;
+	line-height: 49px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 500;
+	text-align: center;
+	color: #fff;
+}
+.nav ul li a:link,
+.nav ul li a:visited {
+	text-decoration: none;
+}
+.nav ul li a:hover {
+	background-color: /*#0B0FD4;*/#094186;
+	text-decoration: none;
+}
+
+#search_form {
+	float: right;
+	width: 200px;
+	position: absolute;
+	right: 0;
+	padding: 8px 0;
+}
+/* kraj stilizacije header-a !!!!!*/
+/*stilizacija kontakt strane*/
+#map{
+	width: 100%;
+	height: 340px;
+}
+#contact_left{
+	float: left;
+	width: 460px;
+	padding: 10px;
+	margin-bottom: 50px;
+}
+#contact_right{
+	float: right;
+	width: 460px;
+	padding: 10px;
+	margin-bottom: 50px;
+}
+/*kraj stilizacije kontakt strane */
+
+
+/*nova stilizacija */
+#container_news, #container_gallery {
+	overflow: hidden;
+}
+.news, .gallery_img {
+	float: left;
+	width: 710px;
+}
+.big .b_news {
+	float: left;
+	width: 350px;
+	/*height: 100px;*/
+	margin-right: 10px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.big .b_news:nth-of-type(2n) {
+	margin-right: 0;
+}
+#comment {
+	margin-bottom: 10px;
+}
+#all_comment, #add_comment, #add_comm {
+	padding: 10px;
+	background-color: #094186;
+	color: #fff;
+	border: none;
+	margin-right: 10px;
+}
+#show_all_news{
+	display: inline-block;
+	float: right;
+	padding: 10px;
+	background-color: #094186;
+	color: #fff;
+	border: none;
+	margin-right: 10px;
+}
+.kategorija {
+	position: absolute;
+	background-color: /*#0B0FD4;*/#094186;
+	top: 0;
+	width: 75px;
+	text-align: center;
+}
+.b_news a span {
+	display: block;
+	padding: 5px;
+	font-size: 20px;
+	background-color: #000;
+}
+.b_news a:link,
+.b_news a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+.b_news a:hover span {
+	color: #094186;
+}
+.s_news {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.s_news:nth-of-type(3n) {
+	margin-right: 0;
+}
+.s_news a span {
+	display: block;
+	padding: 5px;
+}
+/* side news */
+.side_news {
+	float: right;
+	width: 240px;
+}
+.block {
+	width: 240px;
+}
+.block p {
+	margin: 0;
+}
+.side_news h2 {
+	background-color: #000;
+	margin: 0;
+	color: #fff;
+	padding-left: 5px;
+}
+
+/* kraj nove stilizacije */
+
+
+
+/* stilizacija banera */
+/*
+#baner {
+	background-image: url(../images/baner.jpg);
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+	padding: 50px 0;
+	text-align: center;
+	font-weight: 700;
+}*/
+#slider {
+	overflow: hidden;
+	margin: 20px 0;
+}
+.slides {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 4800px;
+}
+.slide {
+	float: left;
+	list-style-type: none;
+}
+/* stilizacija footer-a */
+#footer {
+	background-color: #000;
+	color: #094186;
+}
+#footer_block {
+	border-bottom: 1px solid grey;
+}
+.footerBlockL {
+	width: 300px;
+	float: left;
+	margin-right: 20px;
+}
+.footerBlockR {
+	float: right;
+	width: 640px;
+}
+.info_map {
+	float: left;
+	width: 120px;
+	margin-right: 10px;
+	margin-top: 60px;
+}
+.info_map:nth-of-type(5) {
+	margin-right: 0;
+}
+span a h6 {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+span a:link,
+span a:visited {
+	color: #fff;
+}
+span a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+span a:active {
+	color: #fff;
+}
+.list ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.list ul li a {
+	font-size: 11px;
+	text-transform: uppercase; 
+}
+.list ul li a:link,
+.list ul li a:visited {
+	color: gray;
+	text-decoration: none;
+}
+.list ul li a:hover {
+	color: #fff;
+}
+.list ul li a:active {
+	color: #fff;
+}
+.footer_bottom {
+	margin: 20px 0;
+}
+.footer_bottom img {
+	float: right;
+	margin-bottom: 20px;
+}
+
+
+/* stilizacija user stranice...korišćene su klase iz bootstrapa-a !!!!! 
+<link href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+*/
+
+#login_form {
+	float: left;
+	width: 400px;
+	padding: 50px 50px;
+	border-radius: 10px;
+	background-color: #fff;
+}
+#registration_form {
+	float: right;
+	width: 400px;
+	padding: 50px 50px;
+	border-radius: 10px;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+#login_form p {
+	color: red;
+}
+#registration_form p {
+	color: red;
+}
+
+
+/* stilizacija big_news stranice */
+#big_news {
+	float: left;
+	width: 710px;
+	margin-bottom: 50px;
+}
+#big_news img {
+	margin-bottom: 10px;
+}
+.komentari {
+	width: 300px;
+	padding: 25px;
+}
+.user_comment {
+	width: 710px;
+	margin-top: 10px;
+	border: 1px solid lightgray;
+	padding: 10px;
+	border-radius: 4px;
+	position: relative;
+}
+
+/* stilizacija administrativnog panela !!!!! */
+.admin_form {
+	float: left;
+	width: 400px;
+	background-color: #fff;
+	padding: 25px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.insert_gallery {
+	width: 400px;
+	padding: 25px;
+}
+.insert_gallery input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.insert_images {
+	width: 310px;
+	margin-right: 10px;
+	float: left;
+}
+.insert_images input[type=text], textarea, select {
+	width: 100%;
+	padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/* stilizacia galerije slika !!!!*/
+
+.gallery {
+	position: relative;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+.gallery:nth-of-type(4n) {
+	margin-right: 0;
+}
+.gallery_name {
+	position: absolute;
+	top: 147px;
+	padding: 20px;
+	width: 225px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+}
+.gallery_name p {
+	margin: 0;
+	font-size: 20px;
+}
+.gallery a {
+	display: block;
+}
+.gallery a:hover {
+	opacity: 0.9;
+}
+.image {
+	float: left;
+	width: 141px;
+	height: 141px;
+	margin: 0 1px 1px 0;
+	background: #000;
+}
+.image:nth-of-type(5n) {
+	margin-right: 0;
+}
+/* strana pretrage*/
+.search {
+    float: left;
+}
+.search img {
+    float: left;
+}
+/*najnovije galerije stilizacija !!!*/
+.newest_gallery {
+	overflow: hidden;
+	position: relative;
+	margin-top: 5px;
+}
+#title_gallery {
+	width: 240px;
+	height: 50px;
+	padding: 10px 0;
+	background: black;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	bottom: -240px;
+	transition: 1s all ease;
+	opacity: 0.8;
+	font-weight: 700;
+}
+.newest_gallery:hover #title_gallery {
+	bottom: 0;
+}
+
+/* stilizacija forgot,reset,verify,succes i error strane !!!! */

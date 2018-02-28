@@ -1,0 +1,9 @@
+PODACI ZA ADMIN PANEL:
+EMAIL: admin@mail.com
+pass: 12345678
+
+Prilikom registracije novog korisnika status je po difoltu user (ručno promeniti u admin ukoliko je potrebno !!!)
+Kod verifikacije i resetovanja pass je objašnjeno u komentaru samog koda !!!!
+
+
+database name: portal
