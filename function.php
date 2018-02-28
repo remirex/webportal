@@ -1,7 +1,7 @@
 <?php
 function connect()
 {
-    $db = @ mysqli_connect('localhost','root','remirexklds89','portal');
+    $db = @ mysqli_connect('localhost','root','','');
     if(!$db) return false;
     // č ć ž đ š
     mysqli_query($db,'SET NAMES UTF8');
